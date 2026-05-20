@@ -73,7 +73,7 @@ export default function Contact() {
             <div className="flex items-start gap-4">
               <Clock className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
               <div>
-                <h3 className="mb-2">Hours</h3>
+                <h3 className="mb-2">Opening Hours</h3>
                 <p className="text-muted-foreground">
                   {t.hours[0]}<br />
                   {t.hours[1]}
