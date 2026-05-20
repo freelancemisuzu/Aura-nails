@@ -32,7 +32,7 @@ export default function About() {
   const t = text[lang];
 
   return (
-    <section id="about" className="py-24 px-6 bg-card/30 backdrop-blur-sm">
+    <section id="about" className="py-24 px-6 bg-card/50">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>

@@ -25,7 +25,7 @@ export default function Contact() {
   const t = text[lang];
 
   return (
-    <section id="contact" className="py-24 px-6 bg-card/30 backdrop-blur-sm">
+    <section id="contact" className="py-24 px-6 bg-card/50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-6xl text-center mb-16 tracking-wide">Visit Us</h2>
 

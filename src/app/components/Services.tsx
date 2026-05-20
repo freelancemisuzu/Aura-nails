@@ -161,7 +161,7 @@ export default function Services() {
   const t = pageText[lang];
 
   return (
-    <section id="services" className="py-24 px-6 bg-card/30 backdrop-blur-sm">
+    <section id="services" className="py-24 px-6 bg-card/50">
       <div className="max-w-7xl mx-auto">
         <h2 className={`text-3xl md:text-6xl text-center tracking-wide ${t.subtitle ? 'mb-4' : 'mb-16'}`}>Our Services</h2>
         {t.subtitle && (

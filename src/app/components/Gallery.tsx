@@ -23,7 +23,7 @@ export default function Gallery() {
   const { lang } = useLang();
   
   return (
-    <section id="gallery" className="py-24 px-6 bg-card/30 backdrop-blur-sm">
+    <section id="gallery" className="py-24 px-6 bg-card/50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-6xl text-center mb-16 tracking-wide">Gallery</h2>
 

@@ -79,7 +79,7 @@ export default function FAQ() {
   const t = pageText[lang];
 
   return (
-    <section id="faq" className="py-16 px-4 md:py-24 md:px-6 bg-card/30 backdrop-blur-sm">
+    <section id="faq" className="py-16 px-4 md:py-24 md:px-6 bg-card/50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-6xl text-center mb-4 tracking-wide">
           Frequently Asked Questions
