@@ -36,7 +36,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-6xl mb-6 tracking-wide">About Aura Nails</h2>
+            <h2 className="text-3xl md:text-6xl mb-6 tracking-wide font-cormorant italic font-semibold">About Aura Nails</h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">{t.para1}</p>
             <div className="text-muted-foreground mb-8 leading-relaxed space-y-2">
               {t.para2.map((line, i) => (

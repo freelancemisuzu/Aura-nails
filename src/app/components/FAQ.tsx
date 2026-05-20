@@ -81,7 +81,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-16 px-4 md:py-24 md:px-6 bg-card/50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-6xl text-center mb-4 tracking-wide">
+        <h2 className="text-3xl md:text-6xl text-center mb-4 tracking-wide font-cormorant italic font-semibold">
           Frequently Asked Questions
         </h2>
         <p className="text-center text-muted-foreground text-sm md:text-base mb-8 md:mb-16 max-w-2xl mx-auto">
