@@ -172,9 +172,12 @@ export default function Services() {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-12">
           {services.slice(0, 4).map((service, index) => (
-            <div
+            <a
               key={index}
-              className="bg-card rounded-3xl hover:shadow-xl transition-all hover:-translate-y-2 border border-border flex flex-col h-full overflow-hidden"
+              href="https://beauty.hotpepper.jp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-card rounded-3xl hover:shadow-xl transition-all hover:-translate-y-2 border border-border flex flex-col h-full overflow-hidden block cursor-pointer"
             >
               {service.image && (
                 <div className="h-32 md:h-48 overflow-hidden border-b border-border/50">
@@ -199,7 +202,7 @@ export default function Services() {
                   <span className="text-[10px] md:text-xs text-muted-foreground font-medium">{service.duration}</span>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
@@ -225,9 +228,12 @@ export default function Services() {
               
               <div className="grid grid-cols-1 gap-6 mt-6">
                 {services.map((service, index) => (
-                  <div
+                  <a
                     key={index}
-                    className="py-6 border-b border-border/50 last:border-0"
+                    href="https://beauty.hotpepper.jp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block py-6 border-b border-border/50 last:border-0 hover:bg-card/30 transition-colors px-4 rounded-2xl cursor-pointer group"
                   >
                     <div className="flex flex-col md:flex-row gap-6 items-start">
                       <div className="flex-1">
@@ -245,15 +251,9 @@ export default function Services() {
                           {service.details}
                         </p>
                         <div className="flex items-center justify-between mt-4 pt-4 border-t border-border/50">
-
-                          <a 
-                            href="https://beauty.hotpepper.jp/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs font-medium text-primary hover:underline"
-                          >
+                          <span className="text-xs font-medium text-primary group-hover:underline">
                             {lang === 'en' ? 'Book on Hotpepper →' : 'ホットペッパーで予約 →'}
-                          </a>
+                          </span>
                         </div>
                       </div>
 
@@ -273,7 +273,7 @@ export default function Services() {
                         </div>
                       )}
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </DialogContent>
