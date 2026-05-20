@@ -37,7 +37,6 @@ export default function Hero() {
         muted
         playsInline
         {...({ "webkit-playsinline": "true" } as any)}
-        poster="/studio-interior.jpg"
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="/hero-video.mp4" type="video/mp4" />
