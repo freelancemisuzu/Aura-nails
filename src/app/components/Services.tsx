@@ -210,7 +210,7 @@ export default function Services() {
           <Dialog>
             <DialogTrigger asChild>
               <button 
-                className={`px-6 py-2 rounded-full transition-all hover:scale-105 font-medium text-dark-brown border-2 border-dark-brown cursor-pointer ${lang === 'jp' ? 'text-xs' : 'text-sm'}`}
+                className="px-6 py-2.5 rounded-full transition-all hover:scale-105 font-medium text-dark-brown border-2 border-dark-brown cursor-pointer text-sm"
                 style={{ backgroundColor: '#F5E6A3' }}
                 onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#EDD97A')}
                 onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#F5E6A3')}
