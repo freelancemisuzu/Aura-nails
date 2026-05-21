@@ -59,7 +59,7 @@ export default function Hero() {
           href="https://beauty.hotpepper.jp/"
           target="_blank"
           rel="noopener noreferrer"
-          className={`px-6 py-2.5 rounded-full transition-all hover:scale-105 font-medium text-dark-brown inline-block border-2 border-dark-brown ${lang === 'jp' ? 'text-[10px]' : 'text-xs'}`}
+          className={`px-8 py-3 rounded-full transition-all hover:scale-105 font-medium text-dark-brown inline-block border-2 border-dark-brown ${lang === 'jp' ? 'text-xs' : 'text-sm'}`}
           style={{ backgroundColor: '#F5E6A3' }}
           onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#EDD97A')}
           onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#F5E6A3')}
