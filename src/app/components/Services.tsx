@@ -78,65 +78,65 @@ const servicesData = {
   jp: [
     {
       title: 'One Color',
-      description: 'シンプルながらも洗練された、美しい単色のジェルネイル',
+      description: '',
       price: '¥6,000',
       duration: '60分',
       image: '/pexels-monica-loov-2149792449-30794447.jpg',
-      details: '丁寧なドライケアとフォルム形成にこだわり、手元を最も美しく見せるワンカラー。シンプルだからこそ際立つ、上質な仕上がりをお楽しみください。',
+      details: '＊200色以上のカラーから１色お選び頂けます\n＊カラー調合可能です、１色追加につき＋500円になります\n＊甘皮ケア込みです',
       benefits: ['ネイルファイリング', '甘皮トリートメント', 'ハンドマッサージ', 'カラー選択']
     },
     {
       title: 'Gel Extensions',
-      description: '自然な仕上がりで長持ち、エレガントなジェルエクステ',
+      description: '',
       price: '¥12,000',
       duration: '90分',
       image: '/de-aura-4aEkXAhkAVQ-unsplash.jpg',
-      details: '最大3週間持続する高品質なジェルエクステ。ご希望の長さ・形にオーダーメイドで仕上げます。',
+      details: '＊10本長さだしのコースです\n＊シンプルなデザインの中からお選び頂けます',
       benefits: ['オーダーメイドの長さ・形', '自然な仕上がり', '2〜3週間持続', '爪を補強']
     },
     {
       title: 'Magnet Gel',
-      description: '幻想的な3D効果が魅力のマグネットジェル',
+      description: '',
       price: '¥7,000',
       duration: '60分',
       image: '/caroline-badran-OIEU0eopPT4-unsplash.jpg',
-      details: '光を受けて美しく輝く独自のマグネット効果で、奥行きのある立体感を演出します。長持ちで上品な仕上がりです。',
+      details: '＊100色以上のカラーから１色お選び頂けます\n＊カラー調合可能です、１色追加につき＋500円になります\n＊甘皮ケア込みです',
       benefits: ['3Dマグネット効果', 'ハイグロス仕上げ', '2〜3週間持続', '豊富なカラー展開']
     },
     {
       title: 'Nail Art',
-      description: 'あなたのスタイルに合わせたオリジナルデザイン',
+      description: '',
       price: '¥8,000〜',
       duration: '60分〜',
       image: '/IMG_1253.jpg',
-      details: 'シンプルなワンポイントから複雑なデザインまで、あなたのイメージを形にします。季節のデザインも随時ご提案。',
+      details: '＊デザインお持ち込み可能です\n＊ネイリストにデザインお任せ可能です\n＊大きなパーツは追加で別途料金をいただいております',
       benefits: ['カスタムデザイン', 'ハンドペイント', 'ストーン・パーツ対応', '季節限定デザイン']
     },
     {
       title: 'French Nail',
-      description: '王道の美しさ、手元を上品に見せるフレンチネイル',
+      description: '',
       price: '¥8,000',
       duration: '75分',
       image: '/nail images1.jpg',
-      details: '自然なベースカラーに、先端のホワイトラインを丁寧に描きます。清潔感のある、時代を問わないエレガントな仕上がりです。',
+      details: '＊100色以上のカラーから2色までお選び頂けます\n＊カラー追加は１色＋500円になります\n＊甘皮ケア込みです',
       benefits: ['タイムレスな魅力', 'ハンドペイントの精密さ', '清潔感のある仕上がり', '上品な美しさ']
     },
     {
       title: 'Removal',
-      description: '自爪を傷めない、プロによる丁寧なオフ',
+      description: '',
       price: '¥3,000',
       duration: '30分',
       image: '/pexels-aloevera-20805375.jpg',
-      details: '薬剤を使用して丁寧にジェルをオフします。自爪の健康を第一に考え、最後は保湿オイルで仕上げます。',
+      details: '＊自爪を傷つけない、プロに取る丁寧なジェルオフのみのコースになります\n＊スカルプオフは＋1000になります\n＊甘皮ケア込みです',
       benefits: ['自爪の健康を重視', '安全なオフ技術', '爪の形を整える', '保湿ケア付き']
     },
     {
       title: 'Foot Gel',
-      description: '足元を彩る、高発色で長持ちするフットジェル',
+      description: '',
       price: '¥7,500',
       duration: '60分',
       image: '/pexels-brandon-richardson-99820571-9468564.jpg',
-      details: 'フットバス・甘皮ケア込みのコース。サンダルの季節はもちろん、一年中美しい足元をキープできます。',
+      details: '＊200色以上のカラーから１色お選び頂けます\n＊カラー調合可能です、１色追加につき＋500円になります\n＊甘皮ケア込みです',
       benefits: ['鮮やかな発色', '甘皮ケア込み', '剥がれにくい', 'すぐ靴が履ける']
     }
   ],
@@ -247,7 +247,7 @@ export default function Services() {
                             <p className="text-sm text-muted-foreground">{service.duration}</p>
                           </div>
                         </div>
-                        <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                        <p className="text-sm text-muted-foreground mb-3 leading-relaxed whitespace-pre-line">
                           {service.details}
                         </p>
                         <div className="flex items-center justify-between mt-4 pt-4 border-t border-border/50">
