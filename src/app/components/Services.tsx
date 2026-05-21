@@ -218,63 +218,65 @@ export default function Services() {
                 {t.viewAll}
               </button>
             </DialogTrigger>
-            <DialogContent className="max-w-4xl max-h-[85vh] overflow-y-auto bg-background">
-              <DialogHeader>
+            <DialogContent className="max-w-4xl max-h-[85vh] bg-background flex flex-col overflow-hidden">
+              <DialogHeader className="pr-10">
                 <DialogTitle className="text-2xl md:text-4xl tracking-wide mb-2">All Services</DialogTitle>
                 <DialogDescription className="text-muted-foreground">
                   {t.dialogDesc}
                 </DialogDescription>
               </DialogHeader>
               
-              <div className="grid grid-cols-1 gap-6 mt-6">
-                {services.map((service, index) => (
-                  <a
-                    key={index}
-                    href="https://beauty.hotpepper.jp/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block py-6 border-b border-border/50 last:border-0 hover:bg-card/30 transition-colors px-4 rounded-2xl cursor-pointer group"
-                  >
-                    <div className="flex flex-col md:flex-row gap-6 items-start">
-                      <div className="flex-1">
-                        <div className="flex items-start justify-between mb-2">
-                          <div>
-                            <h3 className="mb-1 font-semibold" style={{ color: '#835C3B' }}>{service.title}</h3>
-                            <p className="text-sm text-muted-foreground">{service.description}</p>
+              <div className="flex-1 overflow-y-auto mt-6 pr-2">
+                <div className="grid grid-cols-1 gap-6">
+                  {services.map((service, index) => (
+                    <a
+                      key={index}
+                      href="https://beauty.hotpepper.jp/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block py-6 border-b border-border/50 last:border-0 hover:bg-card/30 transition-colors px-4 rounded-2xl cursor-pointer group"
+                    >
+                      <div className="flex flex-col md:flex-row gap-6 items-start">
+                        <div className="flex-1">
+                          <div className="flex items-start justify-between mb-2">
+                            <div>
+                              <h3 className="mb-1 font-semibold" style={{ color: '#835C3B' }}>{service.title}</h3>
+                              <p className="text-sm text-muted-foreground">{service.description}</p>
+                            </div>
+                            <div className="text-right flex-shrink-0 ml-4">
+                              <p className="font-semibold text-[17px]" style={{ color: '#835C3B' }}>{service.price}</p>
+                              <p className="text-sm text-muted-foreground">{service.duration}</p>
+                            </div>
                           </div>
-                          <div className="text-right flex-shrink-0 ml-4">
-                            <p className="font-semibold text-[17px]" style={{ color: '#835C3B' }}>{service.price}</p>
-                            <p className="text-sm text-muted-foreground">{service.duration}</p>
+                          <p className="text-sm text-muted-foreground mb-3 leading-relaxed whitespace-pre-line">
+                            {service.details}
+                          </p>
+                          <div className="flex items-center justify-between mt-4 pt-4 border-t border-border/50">
+                            <span className="text-xs font-medium text-primary group-hover:underline">
+                              {lang === 'en' ? 'Book on Hotpepper →' : 'ホットペッパーで予約 →'}
+                            </span>
                           </div>
                         </div>
-                        <p className="text-sm text-muted-foreground mb-3 leading-relaxed whitespace-pre-line">
-                          {service.details}
-                        </p>
-                        <div className="flex items-center justify-between mt-4 pt-4 border-t border-border/50">
-                          <span className="text-xs font-medium text-primary group-hover:underline">
-                            {lang === 'en' ? 'Book on Hotpepper →' : 'ホットペッパーで予約 →'}
-                          </span>
-                        </div>
-                      </div>
 
-                      {service.image && (
-                        <div className="w-full md:w-48 h-48 md:h-32 rounded-2xl overflow-hidden border border-border shadow-md flex-shrink-0">
-                          <img 
-                            src={service.image} 
-                            alt={service.title} 
-                            className={`w-full h-full object-cover transition-transform duration-500 ${
-                              service.title === 'Magnet Gel' 
-                                ? 'scale-150 hover:scale-[1.65]' 
-                                : service.title === 'Nail Art'
-                                ? 'scale-110 hover:scale-120'
-                                : 'hover:scale-105'
-                            }`}
-                          />
-                        </div>
-                      )}
-                    </div>
-                  </a>
-                ))}
+                        {service.image && (
+                          <div className="w-full md:w-48 h-48 md:h-32 rounded-2xl overflow-hidden border border-border shadow-md flex-shrink-0">
+                            <img 
+                              src={service.image} 
+                              alt={service.title} 
+                              className={`w-full h-full object-cover transition-transform duration-500 ${
+                                service.title === 'Magnet Gel' 
+                                  ? 'scale-150 hover:scale-[1.65]' 
+                                  : service.title === 'Nail Art'
+                                  ? 'scale-110 hover:scale-120'
+                                  : 'hover:scale-105'
+                              }`}
+                            />
+                          </div>
+                        )}
+                      </div>
+                    </a>
+                  ))}
+                </div>
               </div>
             </DialogContent>
           </Dialog>
